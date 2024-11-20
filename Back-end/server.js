@@ -24,6 +24,7 @@ const bodyParser = require("body-parser");
 const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRouter");
 const prodRoutes = require("./routes/productRoutes");
+const cartRouter = require("./routes/cartRouter");
 const sequelize = require("./config/db");
 const cors = require("cors");
 
@@ -39,13 +40,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/users", userRoutes);
 app.use("/api", authRoutes);
 app.use("/api/product", prodRoutes);
+app.use("/api/cart", cartRouter);
 
 // Start the server
 const PORT = process.env.PORT || 3003;
 app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
   try {
-    // Sync database models with the database
     await sequelize.sync();
     console.log("Database synced successfully");
   } catch (error) {

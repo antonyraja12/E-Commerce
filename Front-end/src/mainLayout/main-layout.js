@@ -24,6 +24,7 @@ import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import SideMenu from "./side-menu";
 import Icon from "@ant-design/icons/lib/components/Icon";
+import { withRouter } from "../Users/prop-router";
 
 const { Header, Sider, Content } = Layout;
 const { Text, Title } = Typography;
@@ -67,7 +68,10 @@ const MainLayout = (props) => {
             <Tooltip title={"user"}>
               <Button icon={<UserOutlined />} />
             </Tooltip>
-            <Button icon={<ShoppingCartOutlined />} />
+            <Button
+              onClick={() => props.navigate("/home/cart")}
+              icon={<ShoppingCartOutlined />}
+            />
           </Space>
         </Header>
 
@@ -103,4 +107,4 @@ const MainLayout = (props) => {
   );
 };
 
-export default MainLayout;
+export default withRouter(MainLayout);

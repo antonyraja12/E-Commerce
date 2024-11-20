@@ -9,4 +9,5 @@ const buildApiUrl = (base, ...urls) => {
 export const REGISTER_URL = buildApiUrl(baseapi, "users/add");
 export const LOGIN_URL = buildApiUrl(baseUrl, "login");
 export const PRODUCT_URL = buildApiUrl(baseapi, "product");
+export const CART_URL = buildApiUrl(baseapi, "cart");
 /// http://localhost:3003/api/users/add
