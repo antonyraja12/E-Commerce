@@ -1,0 +1,28 @@
+.custom-menu-item {
+  position: relative;
+}
+/* .custom-menu-item.ant-menu-item-selected::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #1890ff;
+  left: 0;
+} */
+.custom-menu-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #1890ff;
+}
+
+.custom-menu-item::before {
+  left: 0;
+}
+
+.custom-menu-item::after {
+  right: 0;
+}

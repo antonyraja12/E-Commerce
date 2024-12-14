@@ -1,0 +1,73 @@
+.opr-logo {
+  background-color: #fff;
+  height: 100%;
+  width: fit-content;
+  padding: 0 10px;
+}
+.opr-logo img {
+  width: auto;
+  height: 100%;
+}
+.right-block {
+  margin-left: auto;
+  padding: 10px;
+}
+.clock {
+  font-size: 0.9em;
+}
+.station-detail {
+  background-color: #53c41ab0;
+  border: 1px solid #52c41a;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.recording-container {
+  display: flex;
+  align-items: center;
+}
+
+.recording-circle {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: blink 1s infinite;
+}
+
+.recording-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+.blink-section {
+  text-align: center;
+  font-weight: 700;
+  animation: blink-bg 5s infinite;
+}
+
+@keyframes blink-bg {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

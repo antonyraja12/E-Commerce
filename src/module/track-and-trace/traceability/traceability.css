@@ -1,0 +1,4 @@
+.custom-timeline .ant-timeline-item-label {
+  width: 100px !important; /* Set your desired width */
+  text-align: right;
+}

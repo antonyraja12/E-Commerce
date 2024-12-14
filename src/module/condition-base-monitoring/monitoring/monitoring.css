@@ -1,0 +1,56 @@
+.monitoring-card{
+    position: relative;
+    overflow: hidden;
+    flex:1 0 230px;
+
+}
+.monitoring-card.warning{
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+        /* color:red; */
+        box-shadow: 1px 1px 10px #ff535351, -1px -1px 10px #ff535351;
+        /* filter: none; */
+    }
+  }
+.monitoring-card .warning{
+    position:absolute;
+    font-size: 1.2em;
+    right:15px;
+    top:10px;
+    color:#FF5353;
+
+    transition: .25s;
+    transform: translate(25%,-25%);
+    /* animation: blinker 1s linear infinite; */
+}
+.monitoring-card .icon{
+    font-size: 4em;
+    position:absolute;
+    top:50%;
+    right:10px;
+    transform: translateY(-35%);
+
+    z-index:-1;
+}
+
+
+.monitoring-card:nth-child(1n) .icon{
+    color:#e0ffe9;
+}
+.monitoring-card:nth-child(2n) .icon{
+    color:#fff4f4;
+}
+.monitoring-card:nth-child(3n) .icon{
+    color:#e7ecfd !important;
+}
+
+
+
+
+.monitoring-card .ant-card-body {
+    z-index: 1;
+    position: relative;
+}
+

@@ -1,0 +1,152 @@
+.andon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 150px; */
+  text-align: center;
+  /* border: 1px solid #a3b2d5; */
+}
+
+.andon-top-text {
+  color: #666666;
+}
+.andon-top-title {
+  color: #233e7f !important;
+}
+.andon-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.table-shift .ant-table td,
+.table-shift .ant-table th {
+  height: 80px;
+  font-weight: 600;
+  font-size: 33px;
+}
+
+.card-title {
+  font-size: 33px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.card-sub-title {
+  /* padding-top: 10%; */
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.stat-title {
+  color: #4f75ff;
+  font-size: 33px;
+  font-weight: "bold";
+}
+.tag-table {
+  font-size: 20px;
+  height: 40px;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  align-content: center;
+}
+
+@media (max-width: 1440px) {
+  .table-shift .ant-table td,
+  .table-shift .ant-table th {
+    font-size: 20px;
+    height: 40px;
+  }
+  .stat-title,
+  .card-title {
+    font-size: 20px;
+  }
+  .card-sub-title {
+    font-size: 13px;
+  }
+  .tag-table {
+    font-size: 20px;
+    height: 40px;
+    width: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .table-shift .ant-table td,
+  .table-shift .ant-table th {
+    font-size: 20px;
+  }
+  .stat-title,
+  .card-title {
+    font-size: 20px;
+  }
+  .card-sub-title {
+    font-size: 10px;
+    padding-top: 10%;
+  }
+  .tag-table {
+    font-size: 15px;
+    height: 30px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .table-shift .ant-table td,
+  .table-shift .ant-table th {
+    font-size: 20px; /* Reduces font size for screens smaller than 992px */
+  }
+  .stat-title,
+  .card-title {
+    font-size: 20px;
+  }
+  .card-sub-title {
+    font-size: 10px;
+  }
+  .tag-table {
+    font-size: 15px;
+    height: 25px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-shift .ant-table td,
+  .table-shift .ant-table th {
+    font-size: 16px;
+  }
+  .stat-title,
+  .card-title {
+    font-size: 16px;
+  }
+  .card-sub-title {
+    font-size: 8px;
+  }
+  .tag-table {
+    font-size: 12px;
+    height: 20px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .table-shift .ant-table td,
+  .table-shift .ant-table th {
+    font-size: 14px;
+  }
+  .stat-title,
+  .card-title,
+  .ole-value {
+    font-size: 14px;
+  }
+  .card-sub-title {
+    font-size: 7px;
+  }
+  .tag-table {
+    font-size: 10px;
+    height: 20px;
+    width: 30px;
+  }
+}

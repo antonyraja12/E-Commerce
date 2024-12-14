@@ -1,0 +1,8 @@
+.otp{
+  /* border:1px solid; */
+  text-align: center;
+  position: relative;
+}
+.otp input{
+  letter-spacing: 2rem;
+}

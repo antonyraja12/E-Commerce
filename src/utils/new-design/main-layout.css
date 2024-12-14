@@ -1,0 +1,118 @@
+.asset-card{
+    width:120px;
+    height:60px;
+    padding:5px;
+    border-radius: 10px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:.8em;
+    color:#B2B9B7;
+}
+.asset-card.selected{
+    color:#314A87;
+}
+
+.marquee{
+    background-color: #dbe9f6;
+    color:#004f95;
+}
+.marquee-list{
+    list-style: none;
+    display:flex;
+    gap: 0;
+    margin-bottom:0;
+    margin-left:250px;
+}
+.marquee-list li{
+    padding:10px 50px;
+    position:relative;
+}
+
+.marquee-list li:not(:first-child)::before{
+    content: " ";
+    display:block;
+    height:5px;
+    width:5px;
+    border-radius: 50%;
+    background-color: #004f95;
+    font-size: 3em;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translate(-50%, -50%);
+
+}
+
+.header-button{
+
+    font-size: 1.3em;
+    line-height: 10px;
+    border:none;
+    box-shadow: 0 2px 8px #0000000d;
+    color:#bbc3d7;
+}
+
+.dashboard-avatar{
+    border:none;
+    background-color: #f7f8fd;
+}
+.container-icon{
+    border:none;
+}
+.shadow{
+    box-sizing: border-box;
+    box-shadow:3px 5px 15px #0000000d !important;
+}
+
+.machine-list{
+    height:70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.asset-link{
+    background:linear-gradient(170deg, #f4d8fd, #ecb4ff);
+    border-radius: 10px;
+    width: 100%;
+    padding:8px 15px 8px 15px;
+    height: AUTO;
+    border: none;
+    color:#333333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position:relative;
+
+}
+
+.asset-link>.icon{
+    position:absolute;
+    right:50%;
+    transform:translateX(100%);
+
+}
+
+
+.asset-link:hover,.asset-link:active{
+    background:linear-gradient(334deg, #e0c6e8, #e299fa) !important;
+    color:#333333 !important;
+
+
+}
+.asset-link:hover>.icon,.asset-link:active>.icon{
+    animation: slide-effect .3s linear forwards;
+}
+@keyframes slide-effect {
+    100%{
+        right:15px;
+        transform:translateX(0);
+    }
+}
+.container-card:hover .container-icon{
+    transform:rotate3d(0, 1, 0, 360deg);
+    transition: .25s;
+}
+

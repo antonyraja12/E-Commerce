@@ -1,0 +1,99 @@
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  flex-direction: row;
+  background-color: #c8ccf2;
+  border-radius: 5px;
+  gap: 10px;
+}
+.logo {
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  left: 5px;
+  width: 120px;
+  padding: 0px 5px 2px;
+  background-color: #ffffffc5;
+  height: fit-content;
+  border-radius: 5px;
+}
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.login-container .image-panel {
+  width: 50%;
+  height: 100%;
+}
+.login-panel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: #fffffff0;
+  height: 100%;
+  padding: 40px 30px 10px;
+  /* border-radius: 10px; */
+}
+.login-panel .title {
+  margin-bottom: 20px;
+}
+.login-panel form {
+  flex: 1 0 auto;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.form-control > label {
+  font-size: 0.9em;
+}
+.form-control > input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  padding: 5px 10px;
+  background: transparent;
+}
+.btn {
+  border-radius: 0;
+  padding: 6px 20px;
+  display: block;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 30px auto 0 auto;
+  width: 100%;
+  background: linear-gradient(45deg, #4caf50, #4caf50);
+  border: 1px solid #4caf50;
+  cursor: pointer;
+}
+.forgot-password {
+  text-align: right;
+}
+.forgot-password > a {
+  color: #868686;
+  font-size: 0.9em;
+}
+footer {
+  font-size: 0.8em;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.message {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}

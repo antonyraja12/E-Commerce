@@ -1,0 +1,210 @@
+.steps {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.steps > .step {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background: linear-gradient(45deg, #bababa, #ffffff, #bababa);
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wi-steps thead th {
+  text-align: center !important;
+  font-weight: 700 !important;
+  background-color: #e1e8fb !important;
+  /* color: #4460a6 !important; */
+}
+
+.ws-header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  margin-bottom: 10px;
+}
+
+.wi-remove thead th {
+  background-color: #fbe1e1 !important;
+}
+.wi-steps,
+.re-work {
+  font-weight: 700;
+}
+.re-work thead th,
+.traceability thead th {
+  text-align: left !important;
+  font-weight: 700 !important;
+  background-color: #e1e8fb !important;
+}
+
+.ws-header-item {
+  overflow: hidden;
+  background-color: #e1e8fb;
+  border: 1px solid #c9d1e7;
+  /* border-radius: 5px; */
+  /* color: #4460a6; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ws-header-item-title {
+  position: relative;
+  font-weight: 500;
+  padding: 10px;
+}
+/* .ws-header-item-title::after {
+  content: " ";
+  height: 100%;
+  top: 0;
+  right: -2px;
+  width: 1px;
+  background-color: #c9d1e7;
+  transform: translate(100%, 0);
+  position: absolute;
+} */
+
+.ws-header-item-value {
+  background-color: #fff;
+  font-weight: 700;
+  height: 100%;
+  padding: 10px;
+  flex: 1 1 auto;
+}
+.instance-active {
+  background-color: #9acdff;
+}
+.active {
+  background: #ffc107b0 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.success {
+  background: #53c41aa7 !important;
+  color: #ffffff !important;
+}
+.failed {
+  background: #ff4d50bb !important;
+  color: #ffffff !important;
+}
+
+.bypass {
+  background: #23b4d1bb !important;
+  color: #ffffff !important;
+}
+
+.error-not {
+  background-color: #ff4d4f;
+}
+.custom-radio {
+  /* text-align: center; */
+  /* width: 50%; */
+}
+
+.custom-radio.ant-radio-button-wrapper-checked {
+  color: #111301 !important;
+  background-color: white !important;
+}
+
+.custom-radio:hover {
+  color: black !important;
+  background-color: #b0b0b0 !important;
+}
+
+.ok {
+  color: green;
+  background: #fff;
+  border-color: green;
+}
+.ok.ant-radio-button-wrapper-checked {
+  background: green !important;
+  color: #ffffff !important;
+}
+
+.ng {
+  color: red;
+  background: #fff;
+  border-color: red;
+}
+.ng.ant-radio-button-wrapper-checked {
+  background: red !important;
+  color: #ffffff !important;
+}
+.ok {
+  color: green;
+  background: #fff;
+  border-color: green;
+}
+.ok.ant-radio-button-wrapper-checked {
+  background: green !important;
+  color: #ffffff !important;
+}
+
+.ng {
+  color: red;
+  background: #fff;
+  border-color: red;
+}
+.ng.ant-radio-button-wrapper-checked {
+  background: red !important;
+  color: #ffffff !important;
+}
+.blinking-dot {
+  /* color: white; */
+  background-color: red;
+  animation: blink 0.5s infinite;
+}
+.blinking-icon {
+  /* color: white; */
+  color: red;
+  animation: blink-icon 0.5s infinite;
+}
+.blink-green {
+  /* color: white; */
+  color: green;
+  animation: blink-green 1s infinite;
+}
+.custom-active {
+  background-color: transparent;
+  color: inherit;
+}
+
+@keyframes blink {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes blink-icon {
+  0% {
+    color: red;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes blink-green {
+  0% {
+    color: green;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: green;
+  }
+}
